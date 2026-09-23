@@ -8,9 +8,9 @@
 <meta property="og:title" content="Ren Jopson — macOS, Rust, Swift & Embedded Systems">
 <meta property="og:description" content="Software, embedded hardware and game projects by Ren Jopson.">
 <meta property="og:url" content="https://rin677.github.io/ren-jopson/"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/assets/portfolio.css?v=20260923-2"><link rel="icon" href="/assets/ren-jopson-mark.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://rin677.github.io/#website","url":"https://rin677.github.io/","name":"Ren Jopson — Projects","publisher":{"@id":"https://rin677.github.io/ren-jopson/#person"}},{"@type":"ProfilePage","@id":"https://rin677.github.io/ren-jopson/#profile","url":"https://rin677.github.io/ren-jopson/","name":"Ren Jopson — macOS, Swift, Rust & Embedded Systems","mainEntity":{"@id":"https://rin677.github.io/ren-jopson/#person"},"isPartOf":{"@id":"https://rin677.github.io/#website"}},{"@type":"Person","@id":"https://rin677.github.io/ren-jopson/#person","name":"Ren Jopson","alternateName":"rin677","url":"https://rin677.github.io/ren-jopson/","sameAs":["https://github.com/rin677"],"jobTitle":"Software Developer","knowsAbout":["macOS development","Swift","Rust","embedded systems","AI-assisted software development","productivity systems","EventKit","Bevy","RP2040"],"mainEntityOfPage":{"@id":"https://rin677.github.io/ren-jopson/#profile"}}]}</script>
-<script defer src="/assets/portfolio.js?v=20260923-2"></script></head><body>
+<link rel="stylesheet" href="/assets/portfolio.css?v=20260923-3"><link rel="icon" href="/assets/ren-jopson-mark.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://rin677.github.io/#website","url":"https://rin677.github.io/","name":"Ren Jopson — Projects","publisher":{"@id":"https://rin677.github.io/ren-jopson/#person"}},{"@type":"ProfilePage","@id":"https://rin677.github.io/ren-jopson/#profile","url":"https://rin677.github.io/ren-jopson/","name":"Ren Jopson — macOS, Swift, Rust & Embedded Systems","mainEntity":{"@id":"https://rin677.github.io/ren-jopson/#person"}},{"@type":"Person","@id":"https://rin677.github.io/ren-jopson/#person","name":"Ren Jopson","alternateName":"rin677","url":"https://rin677.github.io/ren-jopson/","sameAs":["https://github.com/rin677"],"jobTitle":"Software Developer","knowsAbout":["macOS development","Swift","Rust","embedded systems","AI-assisted software development","productivity systems","EventKit","Bevy","RP2040"]}]}</script>
+<script defer src="/assets/portfolio.js?v=20260923-3"></script></head><body>
 <div class="wrap"><nav class="site-nav" aria-label="Primary">
 <a class="brand" href="/ren-jopson/"><img class="brand-mark" src="/assets/ren-jopson-mark.svg" alt=""><span>Ren Jopson</span></a>
 <div class="nav-links"><a aria-current="page" href="/ren-jopson/">Profile</a><a href="/projects/">Projects</a><a rel="me" href="https://github.com/rin677">GitHub</a></div>
@@ -23,26 +23,46 @@
     <h1>Ren Jopson</h1>
     <p class="hero-copy">I build native macOS software, Rust projects, embedded hardware and games. I care about low-overhead tools, understandable systems and projects that survive contact with real users, real hardware and real constraints.</p>
   </div>
-  <aside class="hero-side">
-    <p><strong>Current practice</strong><br>Swift and macOS systems, Rust, embedded firmware and game development.</p>
-    <dl>
-      <dt>Software</dt><dd>Swift, macOS, Rust</dd>
-      <dt>Hardware</dt><dd>RP2040, PCB design</dd>
-      <dt>Games</dt><dd>Bevy, systems design</dd>
-      <dt>Workflow</dt><dd>AI-assisted research and debugging</dd>
-    </dl>
-  </aside>
+  <div class="hero-visual" aria-label="Connected project system diagram">
+    <svg viewBox="0 0 420 360" role="img" aria-label="Planner, Focus and Deadlock connected around Ren Jopson">
+      <path id="heroSignalPath" class="signal-path" d="M88 105C145 55 226 55 286 102S345 201 300 255 174 317 103 262 35 159 88 105"/>
+      <path class="hero-line active" d="M88 105C145 55 226 55 286 102"/>
+      <path class="hero-line" d="M286 102C345 151 345 201 300 255"/>
+      <path class="hero-line active" d="M300 255C232 317 174 317 103 262"/>
+      <path class="hero-line" d="M103 262C35 216 35 159 88 105"/>
+      <path class="hero-line" d="M210 180L88 105M210 180L286 102M210 180L300 255M210 180L103 262"/>
+      <circle class="hero-node accent" cx="210" cy="180" r="47"/>
+      <text class="hero-node-label inverse" x="210" y="176" text-anchor="middle">Ren</text>
+      <text class="hero-node-label inverse" x="210" y="196" text-anchor="middle" font-size="11">build loop</text>
+      <circle class="hero-node" cx="88" cy="105" r="38"/><text class="hero-node-label" x="88" y="110" text-anchor="middle">Planner</text>
+      <circle class="hero-node" cx="286" cy="102" r="38"/><text class="hero-node-label" x="286" y="107" text-anchor="middle">Focus</text>
+      <circle class="hero-node" cx="300" cy="255" r="38"/><text class="hero-node-label" x="300" y="260" text-anchor="middle">Deadlock</text>
+      <circle class="hero-node" cx="103" cy="262" r="38"/><text class="hero-node-label" x="103" y="257" text-anchor="middle">Rust</text><text class="hero-node-label" x="103" y="274" text-anchor="middle" font-size="11">+ hardware</text>
+      <circle class="signal-dot" r="7" style="offset-path:path('M88 105C145 55 226 55 286 102S345 201 300 255 174 317 103 262 35 159 88 105')"/>
+    </svg>
+    <div class="hero-caption">projects connected by one working process</div>
+  </div>
 </section>
 <div class="wrap hero-rule" aria-hidden="true"></div>
 
 <section class="wrap section" aria-labelledby="selected-work">
-  <div class="section-head"><h2 id="selected-work">Selected work</h2><p>Five projects that cover the range of what I build: native macOS tools, workflow software, embedded hardware and Rust game systems.</p></div>
-  <div class="project-list">
-    <div class="project-row"><h3>Deadlock</h3><span class="domain">macOS systems</span><p>Sleep-window enforcement and distraction blocking backed by a root daemon and local IPC.</p><a href="/deadlock/">View project</a></div>
-    <div class="project-row"><h3>Focus</h3><span class="domain">productivity</span><p>A native menu-bar focus timer with countdown/count-up sessions, local history and calendar metadata.</p><a href="/focus/">View project</a></div>
-    <div class="project-row"><h3>Planner</h3><span class="domain">workflow</span><p>An EventKit command center connecting Apple Calendar planning to Focus execution and work history.</p><a href="/planner/">View project</a></div>
-    <div class="project-row"><h3>Oxide Keys</h3><span class="domain">embedded Rust</span><p>A handheld device combining a custom PCB, Pico W, mechanical inputs, display and Rust firmware.</p><a href="/oxide-keys/">View project</a></div>
-    <div class="project-row"><h3>Descent: Null</h3><span class="domain">Rust / Bevy</span><p>A cave survival game built around procedural generation, injuries, inventory, hazards and extraction.</p><a href="/descent-null/">View project</a></div>
+  <div class="section-head"><h2 id="selected-work">Selected work</h2><p>Choose a project to inspect the system behind it. The diagrams are intentionally simplified, but the relationships reflect the actual project architecture.</p></div>
+
+  <div class="project-explorer">
+    <div class="project-switcher" role="tablist" aria-label="Projects">
+      <button type="button" class="project-switch" data-project="deadlock" role="tab" aria-selected="true"><strong>Deadlock</strong><small>macOS systems</small><span>Root daemon, schedules and distraction enforcement.</span></button>
+      <button type="button" class="project-switch" data-project="focus" role="tab" aria-selected="false"><strong>Focus</strong><small>productivity</small><span>Count-up/countdown sessions, history and IPC.</span></button>
+      <button type="button" class="project-switch" data-project="planner" role="tab" aria-selected="false"><strong>Planner</strong><small>workflow</small><span>Calendar planning connected to execution.</span></button>
+      <button type="button" class="project-switch" data-project="oxide" role="tab" aria-selected="false"><strong>Oxide Keys</strong><small>embedded Rust</small><span>PCB, inputs, display and RP2040 firmware.</span></button>
+      <button type="button" class="project-switch" data-project="descent" role="tab" aria-selected="false"><strong>Descent: Null</strong><small>Rust / Bevy</small><span>Procedural survival systems and extraction.</span></button>
+    </div>
+    <div class="project-stage">
+      <div id="project-diagram" class="project-diagram" aria-live="polite"></div>
+      <div class="project-stage-meta">
+        <div><h3 id="project-stage-title">Deadlock</h3><p id="project-stage-description">A root daemon, schedule logic and distraction policy working as one enforcement path.</p></div>
+        <a id="project-stage-link" href="/deadlock/">Open project</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -65,14 +85,7 @@
   </div>
 </section>
 
-<section class="wrap section">
-  <div class="ai-note">
-    <h3>AI in the work</h3>
-    <p>AI is heavily integrated into my engineering and productivity workflow: Swift and Rust debugging, embedded-documentation synthesis, gameplay issue analysis, project planning, note organisation and study workflows.</p>
-    <p>I treat generated output as a proposal. The source of truth is still the code that compiles, the documentation that describes the hardware, the behaviour I can reproduce and the interface that actually works.</p>
-  </div>
-</section>
+<section class="wrap section"><div class="ai-note"><h3>AI in the work</h3><p>AI is heavily integrated into my engineering and productivity workflow: Swift and Rust debugging, embedded-documentation synthesis, gameplay issue analysis, project planning, note organisation and study workflows.</p><p>I treat generated output as a proposal. The source of truth is still the code that compiles, the documentation that describes the hardware, the behaviour I can reproduce and the interface that actually works.</p></div></section>
 </main>
-
 <footer><div class="wrap footer-grid"><div>Ren Jopson — software, embedded systems and game development.</div><div class="footer-links"><a href="/projects/">Projects</a><a rel="me" href="https://github.com/rin677">GitHub</a></div></div></footer>
 </body></html>

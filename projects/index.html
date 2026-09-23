@@ -5,23 +5,46 @@
 <meta name="author" content="Ren Jopson"><meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://rin677.github.io/projects/"><link rel="author" href="https://rin677.github.io/ren-jopson/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ren Jopson"><meta property="og:title" content="Projects by Ren Jopson"><meta property="og:description" content="macOS, Rust, embedded hardware and game projects."><meta property="og:url" content="https://rin677.github.io/projects/">
-<link rel="stylesheet" href="/assets/portfolio.css?v=20260923-2"><link rel="icon" href="/assets/ren-jopson-mark.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","url":"https://rin677.github.io/projects/","name":"Projects by Ren Jopson","about":{"@id":"https://rin677.github.io/ren-jopson/#person"}}</script><script defer src="/assets/portfolio.js?v=20260923-2"></script></head>
+<link rel="stylesheet" href="/assets/portfolio.css?v=20260923-3"><link rel="icon" href="/assets/ren-jopson-mark.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","url":"https://rin677.github.io/projects/","name":"Projects by Ren Jopson","about":{"@id":"https://rin677.github.io/ren-jopson/#person"}}</script><script defer src="/assets/portfolio.js?v=20260923-3"></script></head>
 <body class="project-index">
 <div class="wrap"><nav class="site-nav" aria-label="Primary">
 <a class="brand" href="/ren-jopson/"><img class="brand-mark" src="/assets/ren-jopson-mark.svg" alt=""><span>Ren Jopson</span></a>
 <div class="nav-links"><a href="/ren-jopson/">Profile</a><a aria-current="page" href="/projects/">Projects</a><a rel="me" href="https://github.com/rin677">GitHub</a></div>
 </nav></div>
 <main>
-<section class="wrap hero"><div><p class="kicker">Project index</p><h1>Projects</h1><p class="hero-copy">Software, hardware and games built to answer specific problems rather than fill out a portfolio grid.</p></div><aside class="hero-side"><p><strong>Areas</strong><br>Native macOS systems, productivity software, embedded Rust and game development.</p></aside></section>
+<section class="wrap hero">
+<div><p class="kicker">Project index</p><h1>Projects</h1><p class="hero-copy">Software, hardware and games built to answer specific problems rather than fill out a portfolio grid.</p></div>
+<div class="hero-visual" aria-label="Project constellation">
+<svg viewBox="0 0 420 360" role="img" aria-label="Five connected project areas">
+<path class="hero-line active" d="M65 210L146 90L260 72L346 180L282 286L136 291Z"/>
+<path class="hero-line" d="M146 90L282 286M260 72L136 291"/>
+<circle class="hero-node accent" cx="65" cy="210" r="34"/><text class="hero-node-label inverse" x="65" y="215" text-anchor="middle">macOS</text>
+<circle class="hero-node" cx="146" cy="90" r="34"/><text class="hero-node-label" x="146" y="95" text-anchor="middle">Focus</text>
+<circle class="hero-node" cx="260" cy="72" r="34"/><text class="hero-node-label" x="260" y="77" text-anchor="middle">Rust</text>
+<circle class="hero-node" cx="346" cy="180" r="34"/><text class="hero-node-label" x="346" y="176" text-anchor="middle">PCB</text><text class="hero-node-label" x="346" y="192" text-anchor="middle" font-size="11">RP2040</text>
+<circle class="hero-node" cx="282" cy="286" r="34"/><text class="hero-node-label" x="282" y="291" text-anchor="middle">Bevy</text>
+<circle class="hero-node" cx="136" cy="291" r="34"/><text class="hero-node-label" x="136" y="296" text-anchor="middle">AI</text>
+</svg>
+<div class="hero-caption">one portfolio, multiple systems</div>
+</div>
+</section>
 <div class="wrap hero-rule" aria-hidden="true"></div>
+
 <section class="wrap section">
-<div class="project-list">
-<div class="project-row"><h3>Deadlock</h3><span class="domain">Swift / macOS</span><p>Root-enforced sleep windows and distraction blocking with a native controller.</p><a href="/deadlock/">Details</a></div>
-<div class="project-row"><h3>Focus</h3><span class="domain">Swift / macOS</span><p>Countdown and count-up focus sessions, history and low-overhead menu-bar execution.</p><a href="/focus/">Details</a></div>
-<div class="project-row"><h3>Planner</h3><span class="domain">Swift / EventKit</span><p>Calendar-backed planning that launches Focus and exposes planned-vs-actual work.</p><a href="/planner/">Details</a></div>
-<div class="project-row"><h3>Oxide Keys</h3><span class="domain">Rust / hardware</span><p>Custom handheld hardware and embedded firmware built around RP2040.</p><a href="/oxide-keys/">Details</a></div>
-<div class="project-row"><h3>Descent: Null</h3><span class="domain">Rust / Bevy</span><p>A procedural survival game where movement, injury, inventory and hazards interact.</p><a href="/descent-null/">Details</a></div>
+<div class="section-head"><h2>Explore the systems</h2><p>Use the project selector to switch between simplified architecture diagrams and the actual work behind each project.</p></div>
+<div class="project-explorer">
+<div class="project-switcher" role="tablist" aria-label="Projects">
+<button type="button" class="project-switch" data-project="deadlock" role="tab" aria-selected="true"><strong>Deadlock</strong><small>Swift / macOS</small><span>Sleep and distraction enforcement.</span></button>
+<button type="button" class="project-switch" data-project="focus" role="tab" aria-selected="false"><strong>Focus</strong><small>Swift / macOS</small><span>Focus sessions and work history.</span></button>
+<button type="button" class="project-switch" data-project="planner" role="tab" aria-selected="false"><strong>Planner</strong><small>Swift / EventKit</small><span>Calendar-backed orchestration.</span></button>
+<button type="button" class="project-switch" data-project="oxide" role="tab" aria-selected="false"><strong>Oxide Keys</strong><small>Rust / hardware</small><span>Handheld device and firmware.</span></button>
+<button type="button" class="project-switch" data-project="descent" role="tab" aria-selected="false"><strong>Descent: Null</strong><small>Rust / Bevy</small><span>Procedural survival systems.</span></button>
+</div>
+<div class="project-stage">
+<div id="project-diagram" class="project-diagram" aria-live="polite"></div>
+<div class="project-stage-meta"><div><h3 id="project-stage-title">Deadlock</h3><p id="project-stage-description">A root daemon, schedule logic and distraction policy working as one enforcement path.</p></div><a id="project-stage-link" href="/deadlock/">Open project</a></div>
+</div>
 </div>
 </section>
 <section class="wrap section"><div class="ai-note"><h3>How AI fits</h3><p>I use AI across these projects for debugging, documentation synthesis, implementation review, project handoffs and planning. It speeds up the search and organisation work; actual builds, documentation and observed behaviour determine the final implementation.</p></div></section>
