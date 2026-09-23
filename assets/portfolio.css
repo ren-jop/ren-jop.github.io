@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Saira+Semi+Condensed:wght@500;600;700&display=swap');
+
+:root{
+  --workshop-paper:#e8edf2;
+  --circuit-white:#f7f9fb;
+  --ink-navy:#162433;
+  --signal-blue:#3458c2;
+  --oxide-copper:#a75f3b;
+  --cool-steel:#aab7c4;
+  --line:#c7d1db;
+  --soft-ink:#536273;
+  --focus:#0e3da8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--workshop-paper);
+  color:var(--ink-navy);
+  font-family:"Atkinson Hyperlegible",system-ui,sans-serif;
+  font-size:18px;
+  line-height:1.58;
+  text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.16em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+.wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.site-nav{
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:24px;
+  padding:26px 0 20px;
+  border-bottom:1px solid var(--line);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  font-family:"Saira Semi Condensed",sans-serif;
+  font-weight:700;
+  letter-spacing:-.01em;
+}
+.brand-mark{width:34px;height:34px;display:block}
+.nav-links{display:flex;gap:24px;flex-wrap:wrap;justify-content:flex-end;font-size:.95rem}
+.nav-links a{text-decoration:none}
+.nav-links a[aria-current="page"]{font-weight:700;color:var(--signal-blue)}
+.hero{
+  display:grid;
+  grid-template-columns:minmax(0,7fr) minmax(280px,4fr);
+  gap:clamp(38px,7vw,100px);
+  align-items:end;
+  padding:clamp(70px,10vw,128px) 0 76px;
+}
+.kicker{margin:0 0 18px;color:var(--oxide-copper);font-weight:700}
+h1,h2,h3{font-family:"Saira Semi Condensed",sans-serif;margin:0;letter-spacing:-.035em;line-height:.98}
+h1{font-size:clamp(4.6rem,11vw,9.2rem);font-weight:600;max-width:900px}
+h2{font-size:clamp(2.6rem,5.3vw,5rem);font-weight:600}
+h3{font-size:clamp(1.65rem,2.5vw,2.15rem);font-weight:600}
+.hero-copy{font-size:clamp(1.12rem,2vw,1.38rem);max-width:700px;margin:26px 0 0;color:#28394a}
+.hero-side{padding-bottom:12px}
+.hero-side p{margin:0 0 18px}
+.hero-side dl{margin:28px 0 0;display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;font-size:.94rem}
+.hero-side dt{font-weight:700;color:var(--soft-ink)}
+.hero-side dd{margin:0}
+.section{padding:88px 0;border-top:1px solid var(--line)}
+.section-head{
+  display:grid;
+  grid-template-columns:4fr 7fr;
+  gap:clamp(30px,7vw,96px);
+  align-items:start;
+  margin-bottom:50px;
+}
+.section-head p{margin:6px 0 0;color:var(--soft-ink);max-width:700px}
+.project-list{border-top:1px solid var(--ink-navy)}
+.project-row{
+  display:grid;
+  grid-template-columns:2.2fr 1fr 3fr auto;
+  gap:26px;
+  align-items:baseline;
+  padding:24px 0;
+  border-bottom:1px solid var(--line);
+}
+.project-row h3{font-size:clamp(1.5rem,2.6vw,2.2rem)}
+.project-row .domain{font-size:.9rem;color:var(--oxide-copper);font-weight:700}
+.project-row p{margin:0;color:var(--soft-ink)}
+.project-row a{font-weight:700;white-space:nowrap}
+.ai-band{
+  background:var(--signal-blue);
+  color:#fff;
+  margin:0;
+  overflow:hidden;
+  position:relative;
+}
+.ai-inner{
+  width:min(1180px,calc(100% - 40px));
+  margin:0 auto;
+  padding:96px 0 92px;
+  display:grid;
+  grid-template-columns:5fr 6fr;
+  gap:clamp(40px,8vw,110px);
+  position:relative;
+}
+.ai-inner h2{font-size:clamp(3.4rem,7vw,6.7rem);max-width:560px}
+.ai-lead{font-size:1.28rem;max-width:660px;margin:8px 0 34px}
+.ai-list{display:grid;gap:24px}
+.ai-item{padding-top:18px;border-top:1px solid rgba(255,255,255,.42)}
+.ai-item strong{display:block;font-family:"Saira Semi Condensed";font-size:1.35rem;margin-bottom:6px}
+.trace{
+  position:absolute;
+  right:-8vw;
+  bottom:18px;
+  width:min(48vw,650px);
+  height:auto;
+  opacity:.25;
+  pointer-events:none;
+}
+.trace path{stroke-dasharray:1200;stroke-dashoffset:1200}
+body.ready .trace path{animation:trace-in 1.35s cubic-bezier(.2,.7,.2,1) .15s forwards}
+@keyframes trace-in{to{stroke-dashoffset:0}}
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:38px;
+}
+.process-grid article{border-top:3px solid var(--ink-navy);padding-top:18px}
+.process-grid p{color:var(--soft-ink);margin:10px 0 0}
+.quote{
+  font-family:"Saira Semi Condensed",sans-serif;
+  font-size:clamp(2.2rem,4.5vw,4.2rem);
+  line-height:1.05;
+  max-width:980px;
+  margin:0;
+  letter-spacing:-.03em;
+}
+.project-index h1{font-size:clamp(4rem,9vw,7.6rem)}
+.project-index .hero{grid-template-columns:6fr 4fr}
+.detail-hero{padding:82px 0 64px;border-bottom:1px solid var(--line)}
+.detail-hero h1{font-size:clamp(4rem,9vw,7.4rem)}
+.detail-grid{display:grid;grid-template-columns:3fr 7fr;gap:clamp(32px,7vw,100px);padding:72px 0}
+.detail-grid aside{color:var(--soft-ink)}
+.detail-grid main{padding:0}
+.detail-grid h2{font-size:clamp(2rem,3.2vw,3.2rem);margin:0 0 18px}
+.detail-grid section+section{margin-top:58px}
+.spec-list{display:grid;grid-template-columns:max-content 1fr;gap:10px 20px;margin:0}
+.spec-list dt{font-weight:700}
+.spec-list dd{margin:0}
+.stack{display:flex;flex-wrap:wrap;gap:10px}
+.stack span{border:1px solid var(--line);background:var(--circuit-white);padding:7px 10px}
+footer{
+  padding:40px 0 54px;
+  border-top:1px solid var(--line);
+  color:var(--soft-ink);
+  font-size:.94rem;
+}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:start}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:860px){
+  body{font-size:17px}
+  .site-nav{grid-template-columns:1fr}
+  .nav-links{justify-content:flex-start}
+  .hero,.project-index .hero,.section-head,.ai-inner,.detail-grid{grid-template-columns:1fr}
+  .hero{padding-top:72px}
+  .project-row{grid-template-columns:1fr;gap:8px}
+  .project-row a{margin-top:6px}
+  .process-grid{grid-template-columns:1fr}
+  .trace{width:90vw;right:-30vw}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-links{justify-content:flex-start}
+}
+@media (max-width:520px){
+  .wrap,.ai-inner{width:min(100% - 28px,1180px)}
+  h1{font-size:clamp(3.5rem,20vw,5.5rem)}
+  .section{padding:64px 0}
+  .ai-inner{padding:72px 0}
+  .nav-links{gap:14px;font-size:.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .trace path{animation:none!important;stroke-dashoffset:0!important}
+}
