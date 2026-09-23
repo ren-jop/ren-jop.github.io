@@ -12,6 +12,4 @@ I build native macOS software, Rust projects, embedded systems and games, and I 
 - [Oxide Keys](https://ren-jop.github.io/oxide-keys/) — embedded Rust handheld hardware and firmware
 - [Descent: Null](https://ren-jop.github.io/descent-null/) — Rust / Bevy cave survival game
 
-The old reading tracker has been retired. This repository now exists solely as my portfolio/project site.
-
 [GitHub profile](https://github.com/ren-jop)
