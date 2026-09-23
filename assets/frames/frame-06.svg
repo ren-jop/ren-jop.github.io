@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Engineering systems animation frame 6">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="68%"><stop offset="0" stop-color="#07111b"/><stop offset=".58" stop-color="#02070d"/><stop offset="1" stop-color="#000"/></radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dce8f2"/><stop offset=".46" stop-color="#93b7da"/><stop offset="1" stop-color="#496781"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8c7bb"/><stop offset="1" stop-color="#7c6558"/></linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="360" cy="360" r="260" fill="#6e9cc5" opacity=".035" filter="url(#soft)"/>
+  <g><path d="M80 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M200 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M320 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M440 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M560 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M680 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M800 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M920 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M1040 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M1160 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M1280 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M1400 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M1520 0V900" stroke="#9fb0c0" stroke-opacity=".055"/><path d="M0 90H1600" stroke="#9fb0c0" stroke-opacity=".05"/><path d="M0 210H1600" stroke="#9fb0c0" stroke-opacity=".05"/><path d="M0 330H1600" stroke="#9fb0c0" stroke-opacity=".05"/><path d="M0 450H1600" stroke="#9fb0c0" stroke-opacity=".05"/><path d="M0 570H1600" stroke="#9fb0c0" stroke-opacity=".05"/><path d="M0 690H1600" stroke="#9fb0c0" stroke-opacity=".05"/><path d="M0 810H1600" stroke="#9fb0c0" stroke-opacity=".05"/><circle cx="135" cy="105" r="2.3" fill="#dbe7f3" opacity="0.23"/><circle cx="272" cy="188" r="1.2" fill="#dbe7f3" opacity="0.22"/><circle cx="409" cy="271" r="1.2" fill="#dbe7f3" opacity="0.21"/><circle cx="546" cy="354" r="1.2" fill="#dbe7f3" opacity="0.20"/><circle cx="683" cy="437" r="2.3" fill="#dbe7f3" opacity="0.19"/><circle cx="820" cy="520" r="1.2" fill="#dbe7f3" opacity="0.18"/><circle cx="957" cy="603" r="1.2" fill="#dbe7f3" opacity="0.17"/><circle cx="1094" cy="686" r="1.2" fill="#dbe7f3" opacity="0.16"/><circle cx="1231" cy="769" r="2.3" fill="#dbe7f3" opacity="0.15"/><circle cx="1368" cy="92" r="1.2" fill="#dbe7f3" opacity="0.14"/><circle cx="1505" cy="175" r="1.2" fill="#dbe7f3" opacity="0.13"/><circle cx="202" cy="258" r="1.2" fill="#dbe7f3" opacity="0.12"/><circle cx="339" cy="341" r="2.3" fill="#dbe7f3" opacity="0.11"/><circle cx="476" cy="424" r="1.2" fill="#dbe7f3" opacity="0.10"/><circle cx="613" cy="507" r="1.2" fill="#dbe7f3" opacity="0.09"/><circle cx="750" cy="590" r="1.2" fill="#dbe7f3" opacity="0.08"/><circle cx="887" cy="673" r="2.3" fill="#dbe7f3" opacity="0.25"/><circle cx="1024" cy="756" r="1.2" fill="#dbe7f3" opacity="0.24"/><circle cx="1161" cy="79" r="1.2" fill="#dbe7f3" opacity="0.23"/><circle cx="1298" cy="162" r="1.2" fill="#dbe7f3" opacity="0.22"/><circle cx="1435" cy="245" r="2.3" fill="#dbe7f3" opacity="0.21"/><circle cx="132" cy="328" r="1.2" fill="#dbe7f3" opacity="0.20"/></g>
+  <path d="M390 80V820" stroke="#c8d9e7" stroke-opacity=".06" stroke-width="2"/>
+  
+  <g>
+    <circle cx="800" cy="450" r="250" fill="none" stroke="#94aac0" stroke-opacity=".13" stroke-width="2"/>
+    <circle cx="800" cy="450" r="195" fill="none" stroke="#94aac0" stroke-opacity=".09" stroke-width="1"/>
+    <circle cx="800" cy="450" r="142" fill="none" stroke="url(#line)" stroke-opacity=".65" stroke-width="4" stroke-dasharray="560.0 900" transform="rotate(-35 800 450)"/>
+    <path d="M560 450H690M910 450H1040" stroke="#7fa7cc" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+    <rect x="690" y="330" width="220" height="240" rx="42" fill="#07111b" stroke="#b8c8d8" stroke-opacity=".72" stroke-width="2"/>
+    <rect x="730" y="426" width="140" height="105" rx="18" fill="#0d1925" stroke="#dbe7f3" stroke-opacity=".65"/>
+    <path d="M758 426V389c0-56 84-56 84 0v37" fill="none" stroke="#c9d7e4" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="800" cy="474" r="11" fill="#a9c9e6" filter="url(#glow)"/>
+    <path d="M800 485V506" stroke="#a9c9e6" stroke-width="6" stroke-linecap="round"/>
+    <rect x="960" y="315" width="16" height="270" rx="8" fill="#9fb8d0" opacity="0.68"/>
+    <circle cx="730" cy="450" r="8" fill="#d7e5f1" filter="url(#glow)"/>
+  </g>
+  <g opacity=".35"><circle cx="96" cy="804" r="3" fill="#dfe9f2"/><path d="M112 804H300" stroke="#9fb1c0" stroke-opacity=".22"/></g>
+  </svg>
