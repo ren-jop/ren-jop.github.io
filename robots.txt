@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rin677.github.io/sitemap.xml
+Sitemap: https://ren-jop.github.io/sitemap.xml
