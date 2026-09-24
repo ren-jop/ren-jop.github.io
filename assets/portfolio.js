@@ -17,18 +17,9 @@
           observer.unobserve(entry.target);
         }
       }
-    },{threshold:.12});
+    },{threshold:.1});
     items.forEach(item=>observer.observe(item));
   }else{
     items.forEach(item=>item.classList.add('visible'));
-  }
-  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
-    document.querySelectorAll('.system-card,.case-card,.install-band').forEach(card=>{
-      card.addEventListener('pointermove',event=>{
-        const rect=card.getBoundingClientRect();
-        card.style.setProperty('--mx',`${event.clientX-rect.left}px`);
-        card.style.setProperty('--my',`${event.clientY-rect.top}px`);
-      });
-    });
   }
 })();
