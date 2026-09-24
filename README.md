@@ -1,15 +1,15 @@
 # Ren Jopson — Portfolio
 
-This repository is the source for **https://ren-jop.github.io/**, my personal portfolio and project site.
+Source for **https://ren-jop.github.io/**.
 
-I build native macOS software, Rust projects, embedded systems and games, and I use AI heavily as part of my engineering, debugging, research and productivity workflow.
+The site documents selected work across native macOS software, Rust, embedded systems and game development. It is intentionally static: plain HTML, CSS and a small amount of JavaScript.
 
-## Projects
+## Selected projects
 
-- [Deadlock](https://ren-jop.github.io/deadlock/) — macOS sleep enforcement and distraction blocking
-- [Focus](https://ren-jop.github.io/focus/) — configurable countdown/count-up focus timer
-- [Planner](https://ren-jop.github.io/planner/) — Apple Calendar, Focus and Deadlock command center
-- [Oxide Keys](https://ren-jop.github.io/oxide-keys/) — embedded Rust handheld hardware and firmware
-- [Descent: Null](https://ren-jop.github.io/descent-null/) — Rust / Bevy cave survival game
+- [Deadlock](https://ren-jop.github.io/deadlock/) — privileged macOS sleep/distraction enforcement
+- [Focus](https://ren-jop.github.io/focus/) — native focus sessions and local history
+- [Planner](https://ren-jop.github.io/planner/) — Apple Calendar / EventKit orchestration
+- [Oxide Keys](https://ren-jop.github.io/oxide-keys/) — embedded Rust handheld hardware
+- [Descent: Null](https://ren-jop.github.io/descent-null/) — Rust / Bevy survival game
 
-[GitHub profile](https://github.com/ren-jop)
+GitHub: https://github.com/ren-jop

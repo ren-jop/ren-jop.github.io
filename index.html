@@ -1,1 +1,94 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ren Jopson — Software Engineering, macOS, Rust & Embedded Systems</title><meta name="description" content="Ren Jopson builds native macOS systems, Rust software, embedded hardware and games with explicit architecture, observable runtime behaviour and practical integration."><meta name="author" content="Ren Jopson"><meta name="robots" content="index,follow"><link rel="canonical" href="https://ren-jop.github.io/"><link rel="stylesheet" href="/assets/portfolio.css?v=20260924-systems"><script defer src="/assets/portfolio.js?v=20260924-systems"></script></head><body><header class="site-header"><div class="wrap site-header-inner"><a class="brand" href="/"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="#f2f5f7"/><path d="M9 23V9h8.2c4.2 0 6.5 2 6.5 5.3 0 2.4-1.2 4.1-3.4 5l4.2 3.7h-4.8l-3.7-3.1h-3V23zm4-6.6h4c1.8 0 2.7-.7 2.7-2s-.9-2-2.7-2h-4z" fill="#0a0c0f"/></svg><span>Ren Jopson</span></a><nav class="nav"><a href="/projects/">Projects</a><a href="#approach">Approach</a><a href="#stack">Stack</a><a href="https://github.com/ren-jop">GitHub</a></nav><div class="header-actions"><a class="header-link" href="/projects/">View work →</a><button class="mobile-toggle" type="button" aria-expanded="false">Menu</button></div></div></header><main><section class="wrap hero"><div><p class="eyebrow">Software engineering · macOS · Rust · embedded</p><h1>I build software close to the system boundary.</h1><p class="lede">Native macOS tools, Rust systems, embedded firmware and hardware, and systems-driven games. I care about clear ownership, small interfaces, observable runtime behaviour and software that can be debugged when assumptions fail.</p><div class="actions"><a class="button primary" href="/projects/">View projects</a><a class="button" href="https://github.com/ren-jop">GitHub</a></div></div><aside class="hero-aside"><h2>Current engineering areas</h2><div class="capability"><strong>Native macOS</strong><span>Swift · AppKit · SwiftUI</span></div><div class="capability"><strong>System integration</strong><span>launchd · IPC · EventKit</span></div><div class="capability"><strong>Rust + embedded</strong><span>RP2040 · firmware · PCB</span></div><div class="capability"><strong>Game systems</strong><span>Bevy · ECS · procgen</span></div></aside></section><section class="section"><div class="wrap"><div class="section-head"><h2>Selected engineering</h2><p>Case studies are organised around the engineering problem, ownership boundaries, implementation choices and what is actually verified—not feature count.</p></div><div class="case-grid"><a class="case-card" href="/deadlock/"><div class="case-meta"><span>macOS systems</span><span>v1.2.3 preview</span></div><h3>Deadlock</h3><p>Sleep-window and distraction enforcement that continues independently of the menu-bar interface.</p><ul class="evidence"><li>privileged daemon + independent watchdog</li><li>layered web blocking with diagnostics</li><li>reproducible one-command local install</li></ul><div class="case-link">Read case study <span>→</span></div></a><a class="case-card" href="/focus/"><div class="case-meta"><span>macOS productivity</span><span>v1.7 preview</span></div><h3>Focus</h3><p>A compact execution layer with one owner for timer state, useful history and narrow integrations.</p><ul class="evidence"><li>countdown + open-ended sessions</li><li>planned-vs-actual work history</li><li>native source + one-command install</li></ul><div class="case-link">Read case study <span>→</span></div></a><a class="case-card" href="/planner/"><div class="case-meta"><span>workflow orchestration</span><span>v0.8.1 preview</span></div><h3>Planner</h3><p>A planning layer that keeps Apple Calendar authoritative instead of duplicating scheduling state.</p><ul class="evidence"><li>EventKit-backed scheduling and editing</li><li>explicit Planner → Focus → Deadlock boundaries</li><li>native source + one-command install</li></ul><div class="case-link">Read case study <span>→</span></div></a></div></div></section><section id="approach" class="section"><div class="wrap"><div class="section-head"><h2>Engineering approach</h2><p>I prefer systems that remain understandable at failure boundaries: when state changes, a process exits, hardware behaves differently than expected, or an integration stops agreeing with its assumptions.</p></div><div class="principles"><div class="principle"><h3>Give state one owner</h3><p>A timer, schedule or policy should have one authoritative owner. Integrations pass context instead of creating parallel truth.</p></div><div class="principle"><h3>Prefer observable behaviour</h3><p>Compiler output, runtime state, logs, measurements and hardware documentation outrank assumptions about how a system should behave.</p></div><div class="principle"><h3>Make operation boring</h3><p>Install, update, diagnostics and recovery are part of the design. A project is easier to trust when its operational path is explicit.</p></div><div class="principle"><h3>Ship the smallest coherent loop</h3><p>Validate a complete build → run → interact → inspect path early, then widen the system without losing the working baseline.</p></div></div></div></section><section id="stack" class="section"><div class="wrap"><div class="section-head"><h2>Across the stack</h2><p>I gravitate toward work that crosses boundaries: GUI to daemon, calendar to timer, firmware to PCB, and procedural generation to player feedback.</p></div><div class="stack-grid"><div class="stack-group"><strong>macOS</strong><span>Swift</span><span>AppKit / SwiftUI</span><span>EventKit</span><span>launchd</span></div><div class="stack-group"><strong>Systems</strong><span>Unix IPC</span><span>IOKit</span><span>state machines</span><span>diagnostics</span></div><div class="stack-group"><strong>Rust</strong><span>Bevy ECS</span><span>embedded Rust</span><span>rp2040-hal</span><span>no_std</span></div><div class="stack-group"><strong>Hardware</strong><span>KiCad</span><span>4-layer PCB</span><span>RP2040</span><span>datasheets</span></div></div><p class="note">AI is part of my tooling for research, debugging and review. Generated output is treated as a hypothesis; builds, documentation, measurements and reproducible runtime behaviour remain the source of truth.</p></div></section></main><footer><div class="wrap footer-inner"><span>Ren Jopson · software and systems engineering</span><div class="footer-links"><a href="/projects/">Projects</a><a href="https://github.com/ren-jop">GitHub</a></div></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ren Jopson — macOS, Rust & Embedded Systems</title>
+<meta name="description" content="Ren Jopson builds native macOS software, Rust systems, embedded hardware and games with an emphasis on clear boundaries, observable behavior and maintainable engineering.">
+<meta name="author" content="Ren Jopson"><meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://ren-jop.github.io/">
+<meta property="og:type" content="profile"><meta property="og:site_name" content="Ren Jopson">
+<meta property="og:title" content="Ren Jopson — macOS, Rust & Embedded Systems">
+<meta property="og:description" content="Native macOS software, Rust systems, embedded hardware and game development.">
+<meta property="og:url" content="https://ren-jop.github.io/">
+<link rel="stylesheet" href="/assets/portfolio.css?v=20260924-systems"><script defer src="/assets/portfolio.js?v=20260924-systems"></script>
+</head>
+<body>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">Ren Jopson <span>/ engineer</span></a><nav class="nav" aria-label="Primary"><a href="/#work">Work</a><a href="/#approach">Approach</a><a href="/projects/">Projects</a><a rel="me" href="https://github.com/ren-jop">GitHub</a></nav><button class="mobile-toggle" type="button" aria-expanded="false">Menu</button></div></header>
+<main>
+<section class="wrap hero">
+  <div>
+    <p class="eyebrow">Native macOS · Rust · Embedded systems</p>
+    <h1>I build small, durable systems.</h1>
+    <p class="lede">I work across native macOS software, Rust, embedded hardware and game systems. I care about clear boundaries, observable behavior, and software that stays understandable after the first prototype.</p>
+    <div class="actions"><a class="button button-primary" href="#work">View selected work</a><a class="button" href="https://github.com/ren-jop">GitHub</a></div>
+    <div class="capabilities"><span>Swift / SwiftPM</span><span>Rust / Bevy / no_std</span><span>EventKit / launchd / IOKit</span><span>RP2040 / KiCad</span></div>
+  </div>
+  <div class="system-card reveal" aria-label="macOS productivity system architecture">
+    <div class="system-card-header"><span>FOCUS SYSTEM / ARCHITECTURE</span><span class="status-dot">active work</span></div>
+    <div class="system-row"><span class="num">01</span><div><strong>Planner</strong><p>Calendar-backed orchestration. EventKit remains the source of truth.</p></div><code>plan</code></div>
+    <div class="system-row"><span class="num">02</span><div><strong>Focus</strong><p>Owns work sessions, timer semantics and local history.</p></div><code>execute</code></div>
+    <div class="system-row"><span class="num">03</span><div><strong>Deadlock</strong><p>Privileged enforcement is isolated behind local IPC.</p></div><code>protect</code></div>
+    <div class="system-row"><span class="num">04</span><div><strong>Review</strong><p>Planned time and actual sessions can be compared without duplicating calendar state.</p></div><code>measure</code></div>
+  </div>
+</section>
+
+<section id="work" class="section"><div class="wrap">
+  <div class="section-head reveal"><h2>Selected work</h2><p>Projects are presented by the engineering constraint they solve, not by how many technologies can fit in a card.</p></div>
+  <div class="case-grid">
+    <article class="case-card featured reveal">
+      <span class="case-kicker">macOS systems · Swift</span>
+      <h3>Planning, focus and enforcement as separate layers.</h3>
+      <p>Planner, Focus and Deadlock are three native utilities that share a workflow while keeping scheduling, session state and privileged enforcement independent.</p>
+      <div class="case-facts">
+        <div class="case-fact"><span>constraint</span><strong>Keep Apple Calendar as the source of truth; do not turn the GUI into the enforcement boundary.</strong></div>
+        <div class="case-fact"><span>design</span><strong>EventKit orchestration → local session history → Unix IPC → root daemon.</strong></div>
+        <div class="case-fact"><span>distribution</span><strong>Public SwiftPM source with explicit build/install scripts and macOS CI.</strong></div>
+      </div>
+      <div class="case-links"><a href="/planner/">Planner</a><a href="/focus/">Focus</a><a href="/deadlock/">Deadlock</a><a href="https://github.com/ren-jop">Source</a></div>
+    </article>
+    <div class="case-stack">
+      <article class="case-card reveal">
+        <span class="case-kicker">embedded Rust · hardware</span>
+        <h3>Oxide Keys</h3>
+        <p>A handheld built around an RP2040, custom four-layer PCB, mechanical controls, TFT display and embedded Rust firmware.</p>
+        <div class="case-facts">
+          <div class="case-fact"><span>work</span><strong>PCB design, datasheets, firmware, enclosure and input/display integration.</strong></div>
+          <div class="case-fact"><span>stack</span><strong>Rust · rp-hal · KiCad · RP2040</strong></div>
+        </div>
+        <div class="case-links"><a href="/oxide-keys/">Case study</a><a href="https://github.com/ren-jop/oxide-keys">Source</a></div>
+      </article>
+      <article class="case-card reveal">
+        <span class="case-kicker">Rust / Bevy · game systems</span>
+        <h3>Descent: Null</h3>
+        <p>A procedural cave-survival game built around reachable generation, movement feel, survival feedback and an extraction loop.</p>
+        <div class="case-facts">
+          <div class="case-fact"><span>work</span><strong>ECS architecture, procgen constraints, movement, survival state and player-facing iteration.</strong></div>
+          <div class="case-fact"><span>stack</span><strong>Rust · Bevy · ECS</strong></div>
+        </div>
+        <div class="case-links"><a href="/descent-null/">Case study</a><a href="https://github.com/ren-jop/descent-null">Source</a></div>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section id="approach" class="section"><div class="wrap">
+  <div class="section-head reveal"><h2>Engineering approach</h2><p>The common thread across the projects is reducing ambiguity: one owner for each piece of state, explicit system boundaries, and verification against real behavior.</p></div>
+  <div class="principles">
+    <div class="principle reveal"><span class="index">01</span><h3>One source of truth</h3><p>Do not mirror state unless there is a concrete reason. Planner uses EventKit; Focus owns session history; Deadlock owns enforcement state.</p></div>
+    <div class="principle reveal"><span class="index">02</span><h3>Small boundaries</h3><p>Prefer narrow interfaces between components. Local IPC is easier to reason about than letting every app own privileged behavior.</p></div>
+    <div class="principle reveal"><span class="index">03</span><h3>Build against reality</h3><p>Compiler output, runtime behavior, hardware documentation, measurements and playtests outrank speculative architecture.</p></div>
+    <div class="principle reveal"><span class="index">04</span><h3>Make operations visible</h3><p>Installation paths, privileges, data locations, status and failure modes should be inspectable instead of hidden behind polish.</p></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="install-band reveal">
+    <div><p class="eyebrow">Installable previews</p><h3>The macOS repos now build from a fresh clone.</h3><p>Focus, Planner and Deadlock keep their source, install path and uninstall behavior in the repository. Deadlock also documents its privileged components and cooldown explicitly.</p></div>
+    <div class="code-panel"><div class="code-label">example · Focus</div><pre>git clone --depth 1 https://github.com/ren-jop/focus.git
+cd focus
+./install.sh</pre></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>Ren Jopson · macOS, Rust and embedded systems</span><div class="footer-links"><a href="/projects/">Projects</a><a href="https://github.com/ren-jop">GitHub</a></div></div></footer>
+</body></html>
