@@ -10,7 +10,7 @@
 <meta property="og:title" content="Ren Jopson — macOS, Rust & Embedded Systems">
 <meta property="og:description" content="Native macOS software, Rust systems, embedded hardware and game development.">
 <meta property="og:url" content="https://ren-jop.github.io/">
-<link rel="stylesheet" href="/assets/portfolio.css?v=20260924-systems"><script defer src="/assets/portfolio.js?v=20260924-systems"></script>
+<link rel="stylesheet" href="/assets/portfolio.css?v=20260924-uiverse"><script defer src="/assets/portfolio.js?v=20260924-uiverse"></script>
 </head>
 <body>
 <header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">Ren Jopson <span>/ engineer</span></a><nav class="nav" aria-label="Primary"><a href="/#work">Work</a><a href="/#approach">Approach</a><a href="/projects/">Projects</a><a rel="me" href="https://github.com/ren-jop">GitHub</a></nav><button class="mobile-toggle" type="button" aria-expanded="false">Menu</button></div></header>
@@ -42,7 +42,7 @@
       <div class="case-facts">
         <div class="case-fact"><span>constraint</span><strong>Keep Apple Calendar as the source of truth; do not turn the GUI into the enforcement boundary.</strong></div>
         <div class="case-fact"><span>design</span><strong>EventKit orchestration → local session history → Unix IPC → root daemon.</strong></div>
-        <div class="case-fact"><span>distribution</span><strong>Public SwiftPM source with explicit build/install scripts and macOS CI.</strong></div>
+        <div class="case-fact"><span>distribution</span><strong>Public SwiftPM source, one-command local installs and macOS ARM64 validation.</strong></div>
       </div>
       <div class="case-links"><a href="/planner/">Planner</a><a href="/focus/">Focus</a><a href="/deadlock/">Deadlock</a><a href="https://github.com/ren-jop">Source</a></div>
     </article>
@@ -83,7 +83,7 @@
 
 <section class="section"><div class="wrap">
   <div class="install-band reveal">
-    <div><p class="eyebrow">Installable previews</p><h3>The macOS repos now build from a fresh clone.</h3><p>Focus, Planner and Deadlock keep their source, install path and uninstall behavior in the repository. Deadlock also documents its privileged components and cooldown explicitly.</p></div>
+    <div><p class="eyebrow">Installable previews</p><h3>The macOS repos now build from a fresh clone.</h3><p>Focus, Planner and Deadlock keep their source, install path and operational behavior in the repository. Deadlock's installable source is reconstructed and built in macOS ARM64 CI.</p></div>
     <div class="code-panel"><div class="code-label">example · Focus</div><pre>git clone --depth 1 https://github.com/ren-jop/focus.git
 cd focus
 ./install.sh</pre></div>
