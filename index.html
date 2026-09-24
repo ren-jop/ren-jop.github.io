@@ -2,118 +2,65 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ren Jopson — Systems & Software Engineering</title>
-<meta name="description" content="Ren Jopson builds native macOS tools, Rust systems, embedded hardware and game systems.">
-<meta name="author" content="Ren Jopson"><meta name="robots" content="index,follow,max-image-preview:large">
+<title>Ren Jopson</title>
+<meta name="description" content="Projects by Ren Jopson: macOS software, Rust, embedded hardware and games.">
 <link rel="canonical" href="https://ren-jop.github.io/">
-<meta property="og:type" content="profile"><meta property="og:title" content="Ren Jopson — Systems & Software Engineering">
-<meta property="og:description" content="Native macOS tools, Rust systems, embedded hardware and game systems.">
-<link rel="stylesheet" href="/assets/portfolio.css?v=20260924-black"><script defer src="/assets/portfolio.js?v=20260924-black"></script>
+<link rel="stylesheet" href="/assets/portfolio.css?v=20260924-personal">
+<script defer src="/assets/portfolio.js?v=20260924-personal"></script>
 </head>
 <body>
 <header class="site-header"><div class="wrap header-inner">
-  <a class="brand" href="/">Ren Jopson <span>/ systems engineer</span></a>
-  <nav class="nav" aria-label="Primary"><a href="#work">Work</a><a href="#approach">Approach</a><a href="/projects/">Projects</a><a rel="me" href="https://github.com/ren-jop">GitHub</a></nav>
+  <a class="brand" href="/">Ren Jopson</a>
+  <nav class="nav" aria-label="Primary"><a href="/">Home</a><a href="/projects/">Projects</a><a href="https://github.com/ren-jop">GitHub</a></nav>
   <button class="mobile-toggle" type="button" aria-expanded="false">Menu</button>
 </div></header>
 
 <main>
-<section class="wrap hero">
-  <div>
-    <p class="eyebrow">Software · systems · hardware</p>
-    <h1>Building close to the system boundary.</h1>
-    <p class="lede">I build native macOS tools, Rust systems, embedded hardware and game systems. I care about ownership, observability, performance, and making the operational path as deliberate as the feature itself.</p>
-    <div class="actions"><a class="button button-primary" href="#work">Selected work</a><a class="button" href="https://github.com/ren-jop">GitHub ↗</a></div>
-    <div class="hero-note"><span>Swift / macOS</span><span>Rust / Bevy</span><span>RP2040 / KiCad</span><span>Unix IPC / launchd</span></div>
+<section class="wrap home-intro">
+  <h1>Hi, I’m Ren.</h1>
+  <div class="intro">
+    <p>I like building software and hardware that I actually want to use. Most of my recent work is native macOS software and Rust.</p>
+    <p>I started learning Rust by making two very different things: <a href="/oxide-keys/">Oxide Keys</a>, a handheld with a custom PCB, and <a href="/descent-null/">Descent: Null</a>, a cave-survival game in Bevy. More recently I’ve been making small macOS tools for planning, focus and blocking distractions.</p>
   </div>
-
-  <aside class="system-card reveal" aria-label="Current native macOS system">
-    <div class="system-card-header"><span>current system</span><span class="status-dot">active</span></div>
-    <div class="system-row"><span class="num">01</span><div><strong>Planner</strong><p>Calendar-backed planning. EventKit stays authoritative.</p></div><code>plan</code></div>
-    <div class="system-row"><span class="num">02</span><div><strong>Focus</strong><p>Owns session timing, context and local work history.</p></div><code>execute</code></div>
-    <div class="system-row"><span class="num">03</span><div><strong>Deadlock</strong><p>Root-owned sleep and distraction enforcement behind local IPC.</p></div><code>enforce</code></div>
-    <div class="system-row"><span class="num">04</span><div><strong>Review</strong><p>Compare planned calendar time against completed sessions.</p></div><code>measure</code></div>
-  </aside>
+  <div class="links"><a href="/projects/">all projects</a><a href="https://github.com/ren-jop">github</a></div>
 </section>
 
-<section id="work" class="section"><div class="wrap">
-  <div class="section-head reveal">
-    <h2>Selected work</h2>
-    <p>Projects are described by the engineering problem and ownership boundary, not by a wall of badges or decorative cards.</p>
-  </div>
-
-  <div class="work-list">
-    <article class="work-item reveal">
-      <div class="work-meta"><span class="status">v1.2.4 preview</span><br>macOS systems</div>
-      <div class="work-copy">
-        <h3>Deadlock</h3>
-        <p>A privileged macOS enforcement layer for sleep windows and distraction policy. The UI is not the authority; a root daemon owns the policy and survives independently.</p>
-        <div class="tech">Swift · IOKit · launchd · Unix IPC · Accessibility</div>
-      </div>
-      <a class="work-link" href="/deadlock/">Case study →</a>
+<section class="section"><div class="wrap">
+  <h2>Things I’m working on</h2>
+  <div class="project-list">
+    <article class="project-row">
+      <h3><a href="/deadlock/">Deadlock</a></h3>
+      <div><p>A macOS app that enforces sleep hours and blocks distracting sites even if the menu-bar app is closed.</p><div class="meta">Swift · launchd · IOKit · Unix sockets · v1.2.4 preview · <a href="https://github.com/ren-jop/deadlock">source</a></div></div>
     </article>
-
-    <article class="work-item reveal">
-      <div class="work-meta"><span class="status">v1.7 preview</span><br>native macOS</div>
-      <div class="work-copy">
-        <h3>Focus</h3>
-        <p>A compact session engine for countdown and open-ended work, with local history and narrow integrations instead of duplicated application state.</p>
-        <div class="tech">Swift · AppKit · SwiftPM · local history · IPC</div>
-      </div>
-      <a class="work-link" href="/focus/">Case study →</a>
+    <article class="project-row">
+      <h3><a href="/focus/">Focus</a></h3>
+      <div><p>A small native focus timer with count-up/countdown sessions and local history.</p><div class="meta">Swift · AppKit · SwiftPM · v1.7 preview · <a href="https://github.com/ren-jop/focus">source</a></div></div>
     </article>
-
-    <article class="work-item reveal">
-      <div class="work-meta"><span class="status">v0.8.1 preview</span><br>workflow orchestration</div>
-      <div class="work-copy">
-        <h3>Planner</h3>
-        <p>A planning layer over Apple Calendar that starts execution without creating a second scheduling database.</p>
-        <div class="tech">Swift · EventKit · AppKit / SwiftUI · Apple Calendar</div>
-      </div>
-      <a class="work-link" href="/planner/">Case study →</a>
+    <article class="project-row">
+      <h3><a href="/planner/">Planner</a></h3>
+      <div><p>A planning layer over Apple Calendar that can start a Focus session without maintaining its own second calendar.</p><div class="meta">Swift · EventKit · AppKit / SwiftUI · v0.8.1 preview · <a href="https://github.com/ren-jop/planner">source</a></div></div>
     </article>
-
-    <article class="work-item reveal">
-      <div class="work-meta">embedded Rust<br>hardware</div>
-      <div class="work-copy">
-        <h3>Oxide Keys</h3>
-        <p>A handheld console built around an RP2040, custom four-layer PCB, mechanical controls, TFT display and embedded Rust firmware.</p>
-        <div class="tech">Rust · no_std · rp2040-hal · KiCad · RP2040</div>
-      </div>
-      <a class="work-link" href="/oxide-keys/">Case study →</a>
+    <article class="project-row">
+      <h3><a href="/oxide-keys/">Oxide Keys</a></h3>
+      <div><p>A handheld mini-game console built around a Raspberry Pi Pico W, eight mechanical switches, a TFT display and a custom four-layer PCB.</p><div class="meta">Rust · no_std · rp2040-hal · KiCad · <a href="https://github.com/ren-jop/oxide-keys">source</a></div></div>
     </article>
-
-    <article class="work-item reveal">
-      <div class="work-meta">Rust / Bevy<br>game systems</div>
-      <div class="work-copy">
-        <h3>Descent: Null</h3>
-        <p>A procedural cave-survival game focused on reachable generation, movement feel, survival feedback and a readable extraction loop.</p>
-        <div class="tech">Rust · Bevy ECS · procgen · gameplay systems</div>
-      </div>
-      <a class="work-link" href="/descent-null/">Case study →</a>
+    <article class="project-row">
+      <h3><a href="/descent-null/">Descent: Null</a></h3>
+      <div><p>A 2D cave-survival game where I used Bevy to learn ECS, procedural generation, movement, hazards and survival systems.</p><div class="meta">Rust · Bevy · ECS · <a href="https://github.com/ren-jop/descent-null">source</a></div></div>
     </article>
-  </div>
-</div></section>
-
-<section id="approach" class="section"><div class="wrap">
-  <div class="section-head reveal"><h2>How I work</h2><p>The common thread is reducing ambiguity: one owner for important state, narrow interfaces between components, and evidence from the actual runtime.</p></div>
-  <div class="principles">
-    <div class="principle reveal"><span class="index">01</span><h3>One owner per state</h3><p>Calendar state belongs to EventKit. Session state belongs to Focus. Enforcement state belongs to Deadlock.</p></div>
-    <div class="principle reveal"><span class="index">02</span><h3>Make failures inspectable</h3><p>Logs, status commands, build checks and explicit operational paths matter as much as the happy-path UI.</p></div>
-    <div class="principle reveal"><span class="index">03</span><h3>Validate against reality</h3><p>Compiler output, runtime behavior, hardware docs and measurements outrank speculative architecture.</p></div>
   </div>
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="install-band reveal">
-    <div><p class="eyebrow">Reproducible previews</p><h3>Clone, build, run.</h3><p>The macOS projects keep the install path in-repo and validate the actual source path in CI instead of hiding setup behind manual steps.</p></div>
-    <div class="code-panel"><div class="code-label">example</div><pre>git clone --depth 1 https://github.com/ren-jop/deadlock.git
-cd deadlock
-bash ./install.sh</pre></div>
-  </div>
+  <h2>Right now</h2>
+  <ul class="now-list">
+    <li>Making the macOS apps smaller, more reliable and easier to inspect.</li>
+    <li>Learning more low-level Rust through real hardware instead of exercises alone.</li>
+    <li>Trying to keep projects useful enough that I continue using them after the interesting part is finished.</li>
+  </ul>
 </div></section>
 </main>
 
-<footer><div class="wrap footer-inner"><span>Ren Jopson · systems & software engineering</span><div class="footer-links"><a href="/projects/">Projects</a><a href="https://github.com/ren-jop">GitHub</a></div></div></footer>
+<footer><div class="wrap footer-inner"><span>Ren Jopson</span><div class="footer-links"><a href="/projects/">projects</a><a href="https://github.com/ren-jop">github</a></div></div></footer>
 </body>
 </html>
