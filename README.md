@@ -21,3 +21,5 @@ The homepage is plain HTML. Open [index.html](https://github.com/ren-jop/ren-jop
 For the About page, edit [about/index.html](https://github.com/ren-jop/ren-jop.github.io/blob/main/about/index.html). The full projects list is [projects/index.html](https://github.com/ren-jop/ren-jop.github.io/blob/main/projects/index.html). The detailed pages for Deadlock, Focus and Planner live in their own repositories, in each project's `docs/index.html`.
 
 If you change the main heading or the subject of the site substantially, update the `<title>`, description and social preview tags in the `<head>` of that page too. Styling is in `assets/portfolio.css`; the light/dark switch is in `assets/portfolio.js`.
+
+The homepage portrait is `assets/ren-younger.png`. Replace that file with another photo if you want to change it, or edit the `<img>` and caption in `index.html`. The image is shown with CSS cropping on the page; the original uploaded photo stays intact in the repository.
