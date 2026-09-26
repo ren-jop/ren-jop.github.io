@@ -5,62 +5,61 @@
 <title>Ren Jopson | macOS apps, embedded Rust and games</title>
 <meta name="description" content="Ren Jopson builds native macOS apps, embedded Rust hardware and games. Explore Deadlock, Focus, Planner, Oxide Keys and Descent: Null.">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ren Jopson"><meta property="og:title" content="Ren Jopson | macOS apps, embedded Rust and games"><meta property="og:description" content="Ren Jopson builds native macOS apps, embedded Rust hardware and games. Explore Deadlock, Focus, Planner, Oxide Keys and Descent: Null."><meta property="og:url" content="https://ren-jop.github.io/"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://ren-jop.github.io/">
-<script>try{document.documentElement.dataset.theme=localStorage.getItem('ren-theme')|| (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme='light'}</script><meta name="theme-color" content="#fffcf0"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/portfolio.css?v=20260925-editorial">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('ren-theme')|| (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme='light'}</script><meta name="theme-color" content="#fffcf0"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/portfolio.css?v=20260926-personal">
 <script defer src="/assets/portfolio.js?v=20260925-editorial"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ren Jopson","url":"https://ren-jop.github.io/","sameAs":["https://github.com/ren-jop"],"description":"Ren Jopson builds native macOS apps, embedded Rust hardware and games. Explore Deadlock, Focus, Planner, Oxide Keys and Descent: Null.","hasPart":[{"@type":"CreativeWork","name":"Deadlock","url":"https://ren-jop.github.io/deadlock/"},{"@type":"CreativeWork","name":"Focus","url":"https://ren-jop.github.io/focus/"},{"@type":"CreativeWork","name":"Planner","url":"https://ren-jop.github.io/planner/"},{"@type":"CreativeWork","name":"Oxide Keys","url":"https://ren-jop.github.io/oxide-keys/"},{"@type":"CreativeWork","name":"Descent: Null","url":"https://ren-jop.github.io/descent-null/"}]}</script></head>
-<body>
+<body class="home-page">
 <header class="site-header"><div class="wrap header-inner">
   <a class="brand" href="/">Ren Jopson</a>
-  <nav class="nav" aria-label="Primary"><a href="/">Home</a><a href="/projects/">Projects</a><a href="/about/">About</a><a href="https://github.com/ren-jop">GitHub</a></nav>
+  <nav class="nav" aria-label="Primary"><a href="/projects/">work</a><a href="/about/">about</a><a href="https://github.com/ren-jop">github</a></nav>
   <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark</button><button class="mobile-toggle" type="button" aria-expanded="false">Menu</button>
 </div></header>
 
 <main>
 <section class="wrap home-intro">
-  <h1>Hi, I’m Ren.</h1>
+  <p class="home-kicker">a little corner of the internet</p>
+  <!-- EDIT YOUR INTRO: Change the heading and paragraphs below to sound like you. -->
+  <h1>hey, i’m ren.</h1>
   <div class="intro">
-    <p>I like building software and hardware that I actually want to use. Most of my recent work is native macOS software and Rust.</p>
-    <p>I started learning Rust by making two very different things: <a href="/oxide-keys/">Oxide Keys</a>, a handheld with a custom PCB, and <a href="/descent-null/">Descent: Null</a>, a cave-survival game in Bevy. More recently I’ve been making small macOS tools for planning, focus and blocking distractions.</p>
+    <p>I make little tools for the things I keep running into: getting to bed, staying focused, and making space for what matters during the week.</p>
+    <p>Most of that work ends up as a macOS app. I also like Rust, building hardware, and making games just to see where an idea goes.</p>
   </div>
-  <div class="links"><a href="/projects/">All projects</a><a href="/about/">About me</a><a href="https://github.com/ren-jop">GitHub</a></div>
+  <!-- END EDIT YOUR INTRO -->
+  <div class="links"><a href="/about/">more about me <span aria-hidden="true">↗</span></a><a href="https://github.com/ren-jop">find me on github <span aria-hidden="true">↗</span></a></div>
 </section>
 
-<section class="section"><div class="wrap">
-  <h2>Selected projects</h2>
+<section class="section home-work"><div class="wrap">
+  <div class="section-heading"><h2>things i’ve made</h2><a href="/projects/">all projects <span aria-hidden="true">↗</span></a></div>
   <div class="project-list">
     <article class="project-row">
-      <h3><a href="/deadlock/">Deadlock</a></h3>
-      <div><p>A macOS app that enforces sleep hours and blocks distracting sites even if the menu-bar app is closed.</p><div class="meta">Swift · launchd · IOKit · Unix sockets · v1.2.5 preview · <a href="https://github.com/ren-jop/deadlock">source</a></div></div>
+      <h3><a href="/deadlock/">Deadlock <span aria-hidden="true">↗</span></a></h3>
+      <div><p>A bedtime boundary for my Mac, because closing an app shouldn’t make it disappear.</p><div class="meta">macOS app · Swift</div></div>
     </article>
     <article class="project-row">
-      <h3><a href="/focus/">Focus</a></h3>
-      <div><p>A small native focus timer with count-up/countdown sessions and local history.</p><div class="meta">Swift · AppKit · SwiftPM · v1.7.1 preview · <a href="https://github.com/ren-jop/focus">source</a></div></div>
+      <h3><a href="/focus/">Focus <span aria-hidden="true">↗</span></a></h3>
+      <div><p>A quiet timer for sitting down and doing one thing.</p><div class="meta">macOS app · Swift</div></div>
     </article>
     <article class="project-row">
-      <h3><a href="/planner/">Planner</a></h3>
-      <div><p>A week timeline for time blocks in Apple Calendar, with a direct handoff to Focus.</p><div class="meta">Swift · EventKit · AppKit / SwiftUI · v0.8.2 preview · <a href="https://github.com/ren-jop/planner">source</a></div></div>
+      <h3><a href="/planner/">Planner <span aria-hidden="true">↗</span></a></h3>
+      <div><p>My week laid out as time blocks, connected to Apple Calendar and Focus.</p><div class="meta">macOS app · Swift</div></div>
     </article>
     <article class="project-row">
-      <h3><a href="/oxide-keys/">Oxide Keys</a></h3>
-      <div><p>A handheld mini-game console built around a Raspberry Pi Pico W, eight mechanical switches, a TFT display and a custom four-layer PCB.</p><div class="meta">Rust · no_std · rp2040-hal · KiCad · <a href="https://github.com/ren-jop/oxide-keys">source</a></div></div>
+      <h3><a href="/oxide-keys/">Oxide Keys <span aria-hidden="true">↗</span></a></h3>
+      <div><p>A tiny handheld I built with mechanical keys, a screen, a Pico W, and my own PCB.</p><div class="meta">hardware · Rust</div></div>
     </article>
     <article class="project-row">
-      <h3><a href="/descent-null/">Descent: Null</a></h3>
-      <div><p>A 2D cave-survival game where I used Bevy to learn ECS, procedural generation, movement, hazards and survival systems.</p><div class="meta">Rust · Bevy · ECS · <a href="https://github.com/ren-jop/descent-null">source</a></div></div>
+      <h3><a href="/descent-null/">Descent: Null <span aria-hidden="true">↗</span></a></h3>
+      <div><p>A cave survival game that started as an excuse to learn Bevy.</p><div class="meta">game · Rust</div></div>
     </article>
   </div>
 </div></section>
 
-<section class="section"><div class="wrap">
-  <h2>Right now</h2>
-  <ul class="now-list">
-    <li>Making the macOS apps smaller, more reliable and easier to inspect.</li>
-    <li>Learning more low-level Rust through real hardware instead of exercises alone.</li>
-    <li>Trying to keep projects useful enough that I continue using them after the interesting part is finished.</li>
-  </ul>
+<section class="section home-note"><div class="wrap">
+  <p class="note-label">a note</p>
+  <p>I like projects that start with a real problem and stay small enough to understand. If you’re curious how any of these were made, the code is on <a href="https://github.com/ren-jop">GitHub</a>.</p>
 </div></section>
 </main>
 
-<footer><div class="wrap footer-inner"><span>Ren Jopson</span><div class="footer-links"><a href="/projects/">projects</a><a href="https://github.com/ren-jop">github</a></div></div></footer>
+<footer><div class="wrap footer-inner"><span>made by ren, on the internet.</span><div class="footer-links"><a href="/about/">about</a><a href="https://github.com/ren-jop">github</a></div></div></footer>
 </body>
 </html>
