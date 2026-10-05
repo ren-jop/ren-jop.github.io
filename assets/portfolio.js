@@ -8,7 +8,7 @@
       themeButton.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
       themeButton.setAttribute('aria-pressed',String(dark));
     }
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content',dark?'#1c1c1c':'#fffcf0');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content',dark?'#111a18':'#eae7e2');
   };
   syncTheme();
   themeButton?.addEventListener('click',()=>{
