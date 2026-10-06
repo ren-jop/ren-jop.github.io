@@ -171,3 +171,38 @@ footer{background:transparent}
   .home-page .nav{padding-top:8px}
   .home-page .project-row{min-height:148px}
 }
+
+
+/* Oxide Keys project image gallery */
+.oxide-gallery-section{margin-top:10px}
+.project-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+.project-gallery figure{
+  margin:0;
+  padding:10px;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+.project-gallery-featured{grid-column:1/-1}
+.project-gallery img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/10;
+  object-fit:contain;
+  background:color-mix(in srgb,var(--surface) 80%,var(--line));
+}
+.project-gallery figcaption{
+  margin-top:9px;
+  color:var(--muted);
+  font:500 .68rem/1.5 "SF Mono","SFMono-Regular",ui-monospace,monospace;
+  letter-spacing:.025em;
+}
+@media(max-width:700px){
+  .project-gallery{grid-template-columns:1fr}
+  .project-gallery-featured{grid-column:auto}
+}

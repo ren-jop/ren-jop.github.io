@@ -1,9 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Oxide Keys | RP2040 handheld and embedded Rust — Ren Jopson</title><meta name="description" content="How Ren Jopson designed a four-layer RP2040 handheld PCB and wrote embedded Rust firmware for its controls, display and games."><meta property="og:type" content="website"><meta property="og:site_name" content="Ren Jopson"><meta property="og:title" content="Oxide Keys | RP2040 handheld and embedded Rust — Ren Jopson"><meta property="og:description" content="How Ren Jopson designed a four-layer RP2040 handheld PCB and wrote embedded Rust firmware for its controls, display and games."><meta property="og:url" content="https://ren-jop.github.io/oxide-keys/"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://ren-jop.github.io/oxide-keys/"><script>try{document.documentElement.dataset.theme=localStorage.getItem('ren-theme')|| (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme='light'}</script><meta name="theme-color" content="#fffcf0"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/portfolio.css?v=20260925-editorial"><script defer src="/assets/portfolio.js?v=20260925-editorial"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Oxide Keys | RP2040 handheld and embedded Rust \u2014 Ren Jopson","url":"https://ren-jop.github.io/oxide-keys/","description":"How Ren Jopson designed a four-layer RP2040 handheld PCB and wrote embedded Rust firmware for its controls, display and games.","author":{"@type":"Person","name":"Ren Jopson","url":"https://ren-jop.github.io/"}}</script></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Oxide Keys | RP2040 handheld and embedded Rust — Ren Jopson</title><meta name="description" content="How Ren Jopson designed a four-layer RP2040 handheld PCB and wrote embedded Rust firmware for its controls, display and games."><meta property="og:type" content="website"><meta property="og:site_name" content="Ren Jopson"><meta property="og:title" content="Oxide Keys | RP2040 handheld and embedded Rust — Ren Jopson"><meta property="og:description" content="How Ren Jopson designed a four-layer RP2040 handheld PCB and wrote embedded Rust firmware for its controls, display and games."><meta property="og:url" content="https://ren-jop.github.io/oxide-keys/"><meta property="og:image" content="https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-cad-overview.png"><meta property="og:image:alt" content="Oxide Keys handheld CAD overview by Ren Jopson"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-cad-overview.png"><link rel="canonical" href="https://ren-jop.github.io/oxide-keys/"><script>try{document.documentElement.dataset.theme=localStorage.getItem('ren-theme')|| (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme='light'}</script><meta name="theme-color" content="#fffcf0"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/portfolio.css?v=20261006-oxide-gallery"><script defer src="/assets/portfolio.js?v=20260925-editorial"></script><script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"CreativeWork",
+  "name":"Oxide Keys | RP2040 handheld and embedded Rust — Ren Jopson",
+  "url":"https://ren-jop.github.io/oxide-keys/",
+  "description":"How Ren Jopson designed a four-layer RP2040 handheld PCB and wrote embedded Rust firmware for its controls, display and games.",
+  "author":{"@type":"Person","name":"Ren Jopson","url":"https://ren-jop.github.io/","sameAs":["https://github.com/ren-jop"]},
+  "image":[
+    "https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-cad-overview.png",
+    "https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-pcb.png",
+    "https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-side-cad.png",
+    "https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-switch-led-layout.png",
+    "https://ren-jop.github.io/assets/projects/oxide-keys/ren-jopson-oxide-keys-battery-cad.png"
+  ]
+}</script></head><body>
 <header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">Ren Jopson</a><nav class="nav"><a href="/">Home</a><a href="/projects/">Projects</a><a href="/about/">About</a><a href="https://github.com/ren-jop">GitHub</a></nav><button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark</button><button class="mobile-toggle" type="button" aria-expanded="false">Menu</button></div></header>
 <main><section class="wrap page-hero simple"><p class="eyebrow">embedded Rust / hardware</p><h1>Oxide Keys</h1><p class="lede">A handheld mini-game console I built while learning embedded Rust, using a custom four-layer PCB and a Raspberry Pi Pico W.</p><div class="actions"><a class="button" href="https://github.com/ren-jop/oxide-keys">source</a></div></section>
 <section class="section"><div class="wrap details"><aside><dl><dt>MCU</dt><dd>RP2040 / Pico W</dd><dt>PCB</dt><dd>4 layers</dd><dt>firmware</dt><dd>Rust / no_std</dd><dt>hardware</dt><dd>KiCad</dd></dl></aside><main>
 <section><h2>Why I made it</h2><p>I wanted to learn Rust somewhere the compiler was not the only thing that could go wrong. Designing the hardware made me deal with GPIO, datasheets, display timing, power, physical controls and debugging all at once.</p></section>
 <section><h2>The hardware</h2><p>The handheld uses eight mechanical switches, RGB underglow, a rotary encoder and a small SPI TFT. I designed the four-layer PCB in KiCad and built the enclosure around it.</p></section>
+<section class="oxide-gallery-section" aria-labelledby="oxide-gallery-title">
+  <h2 id="oxide-gallery-title">Hardware and CAD</h2>
+  <p>These are some of the PCB and enclosure views from the Oxide Keys build.</p>
+  <div class="project-gallery">
+    <figure class="project-gallery-featured">
+      <img src="/assets/projects/oxide-keys/ren-jopson-oxide-keys-cad-overview.png" alt="Oxide Keys handheld CAD overview designed by Ren Jopson" loading="eager" fetchpriority="high">
+      <figcaption>Oxide Keys CAD overview — handheld enclosure, display and controls.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/projects/oxide-keys/ren-jopson-oxide-keys-pcb.png" alt="Oxide Keys custom four-layer PCB designed by Ren Jopson" loading="lazy">
+      <figcaption>The custom four-layer PCB designed for Oxide Keys.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/projects/oxide-keys/ren-jopson-oxide-keys-side-cad.png" alt="Side CAD view of the Oxide Keys handheld by Ren Jopson" loading="lazy">
+      <figcaption>Side CAD view showing the handheld's enclosure profile.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/projects/oxide-keys/ren-jopson-oxide-keys-switch-led-layout.png" alt="Oxide Keys mechanical switch and RGB LED placement designed by Ren Jopson" loading="lazy">
+      <figcaption>Mechanical switch and RGB LED placement.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/projects/oxide-keys/ren-jopson-oxide-keys-battery-cad.png" alt="Oxide Keys battery placement CAD by Ren Jopson" loading="lazy">
+      <figcaption>Battery placement inside the enclosure.</figcaption>
+    </figure>
+  </div>
+</section>
 <section><h2>The firmware</h2><p>The firmware is <code>no_std</code> Rust on the RP2040 using the Rust HAL ecosystem. I built a small launcher and simple games including Pong while learning how the display and controls should be structured.</p></section>
 <section><h2>What mattered most</h2><p>The best part of the project was getting a PCB I designed myself fabricated and working. It turned reading documentation and datasheets into something much less abstract.</p></section>
 </main></div></section></main>
